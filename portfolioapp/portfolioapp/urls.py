@@ -19,7 +19,7 @@ from testapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home_view),
-    path('feedback', views.feedback_view),
+    path('feedback/', views.feedback_view),
     path('signup/', views.signup_view),
     path('accounts/',include('django.contrib.auth.urls')),
 ]
